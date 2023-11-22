@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>Web page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+
+
+}
+
+.main{
+    width: 1480px;
+    background: linear-gradient(to top, rgba(240,240,240, 0.5)50%,rgba(240,240,240,0.5)50%);
+    background-size: cover;
+    background-position: center;
+    height:calc(100vh);
+}
+
+
+.navbar {
+    width: 1480px;
+    height: 75px;
+    color: #000;
+    padding: 10px 0;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index:100;
+    
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    width: fit-content;
+    height: fit-content;
+    color: black;
+}
+
+.icon{
+    width:200px;
+    float: left;
+    height: 90px;
+}
+#logo{
+    padding-left:50px;
+    margin-bottom:90px;
+    padding-left: 30px;
+    height: 60px;
+    width: 130px;
+}
+.content h1 img{
+    width: 800px;
+    height: 200px;
+    float: center;
+}
+
+.logo{
+    color: rgba(0, 0, 255, 0.8);
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width:400px;
+    float: left;
+    height:80px;
+
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 5px;
+    font-size: 25px;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4 ease-in-out;
+}
+
+ul li a:hover{
+    color: #000;
+}
+
+.Buy-Now-button{
+    width: 330px;
+    float: left;
+    margin-left: 580px;
+    font-size: 25px;
+    color: #000;
+}
+
+.Login{
+    width: 200px;
+    float: left;
+    margin-left: 600px;
+    font-size: 25px;
+    color: #000;
+    display: flex;
+}
+
+.content{
+    width:1200px;
+    height:auto;
+    margin: auto;
+    color: #000;
+    position: relative;
+
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 260px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff7200;
+    font-size: 200px;
+}
+.shopping-cart {
+    margin-right: 30px; 
+}
+
+.shopping-cart a {
+    text-decoration: none; 
+    font-size: 35px;
+    color: #fff;
+    transition: color 0.3s;
+    display: inline;
+}
+.shopping-cart a:hover {
+    color: #007BFF; 
+}
+
+
+.form{
+    width:250px;
+    height: 400px;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+    position:absolute;
+    top:-20px;
+    left:980px;
+    border-radius:10px;
+    padding: 25px;
+    
+}
+
+.form h2{
+    width:220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin:2px;
+    padding: 8px;
+    position:sticky;
+    top:0;
+    cursor: pointer;
+}
+
+.form input{
+    width:240px;
+    height: 25px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width:240px;
+    height: 40px;
+    background-color: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.btnn:hover{
+    background: #fff;
+    color: #ff7200;
+
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+
+.fs{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ff7200;
+}
+.text-footer{
+    width: 1480px;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #0000ff;
+    background-color:#000;
+    margin-bottom: 5px;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 100%;
+    margin-top: 5px;
+    
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.features {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#mymain{
+    display: flex;
+    gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">              
+            <div class="icon">
+                <a href="indeex.html">
+                <img id="logo" src="website.jpg" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="Review.html">Review</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="shopping-cart header-btn pull-right">
+                <a href="buy.html" title="Buy Now" class="fa fa-shopping-cart"></a>
+            </div>                                 
+        </div>
+        <div class="content">
+          <h1>  <img src="doc-aid (2).png"> <br>Nurturing Health,Building Future</h1>
+                <div class="form">
+                    <h2>Sign for Demo</h2>
+                    <input type="name" name="name" placeholder="Enter the Name"  id="name">
+                    <input type="mobile" name="mobile" placeholder="Enter the Mobile" id="mobile">
+                    <input type="email" name="email" placeholder="Enter the Email" id="email">
+                    <input type="State" name="State" placeholder="Enter the State" id="state">
+                    <input type="City" name="City" placeholder="Enter the City" id="city">
+                    <button class="btnn"><a href="#" onclick="registerUser()">Register</a></button>
+                        
+                                    
+                </div>
+        </div>
+    </div>  
+    <footer>
+        <p class="text-footer">
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        </p>        
+    </footer>
+    <script>
+        function registerUser() {
+            // Get input values
+            var name = document.getElementById('name').value;
+            var mobileNum = document.getElementById('mobile').value;
+            var email = document.getElementById('email').value;
+            var state = document.getElementById('state').value;
+            var city = document.getElementById('city').value;
+
+            // Create a data object to send to the API
+            var data = {
+                name: name,
+                mobileNum: mobileNum,
+                email: email,
+                state: state,
+                city: city
+            };
+            fetch('http://localhost:8008/register/sign', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+                
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                alert("data sent successfully");
+            })
+            .catch(error => {
+                
+                console.error('Error:', error);
+            });
+        }
+       
+       
+    </script>
+</body>
+</html>

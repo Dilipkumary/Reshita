@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            
+        }
+
+        section {
+            padding: 20px;
+            margin: 43px;
+            background-color: #f9f9f9;
+            font-size: 25px;
+            align-items: center;
+            justify-content: center;
+            line-height: 2;
+            padding: 0px 55px;
+        }
+
+        
+        .feature-section {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            line-height: 1.4;
+        }
+        /* .feature-section h2 {
+            font-size: 24px;
+            color: #333;
+        } */
+
+        .feature-section p {
+            font-size: 5px;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .feature-section {
+            margin: 0 auto;
+            max-width: 600px;
+        }
+
+        /* .feature-section + .feature-section {
+            margin-top: 30px;
+        } */
+
+
+        #pricing-section {
+            background-color: #d4edda;
+            
+        }
+
+        .table,th,td{
+            border:1px solid black;
+
+        }
+
+        #demo-video-section {
+            background-color: coral;
+        }
+
+        #request-demo-section {
+            background-color: crimson;
+        }
+
+        #request-demo-form {
+            margin: 20px;
+            padding: 20px;
+            line-height: 1.2;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        .text-footer{
+            text-align: center;
+            padding: 15px;
+            color: #0000ff;
+            background-color:#000;
+            position: relative;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            margin-top: 30px;    
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">              
+            <div class="icon">
+                <a href="indeex.html">
+                    <img id="logo" src="website.jpg" alt="logo">
+                    </a>      
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a href="Review.html">Review</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <section id="product-details">
+
+        <h2><img src="doc-aid (2).png"></h2>
+        <p>A Patient Management Solution for Private Practitioners. In the busy world of healthcare digitalization is a progression that we can’t ignore Thus Doc-Aid is a perfect solution for managing Doctor’s appointments, Prescriptions, and payments for modern clinics.</p>
+        <br>
+        <p>This portal is specifically designed to assist Doctors who have consultations at multiple locations</p>
+        <div id="mymain">
+        <div class="feature-section">
+            <h3>Accessibility</h3>
+            <p1>The integrated software can reduce the cost & time-bound hassle of physical presence by being accessible through multiple platforms.</p1>
+        </div>
+        <div class="feature-section">
+            <h3>Comprehensive Appointment Scheduling</h3>
+            <p1>It provides ease of patient onboarding & prescription management, saving time and allowing more accurate diagnosis.</p1>
+        </div>
+        <div class="feature-section">
+            <h3>Data Security and Privacy</h3>
+            <p1>The software has been designed within the protocols set under the Ayushman Bharat Digital Program</p1>
+        </div>
+        <div class="feature-section">
+            <h3>Maintenance of Accounts</h3>
+            <p1>Digital Scheduling will help doctors & compounders in analyzing per clinic visits and earnings.</p1>
+        </div>
+    </div>
+    </section>
+
+    <section id="pricing-section">
+        <h2>Pricing</h2>
+        <table style="width: 100%">
+            <tr>
+                <td>Onboarding<br>RS 3000</td>
+                <td>Monthly Subscription<br>RS 1500 / Month</td>
+                <td>Additional Location<br>RS 500 / per clinic</td>
+            </tr>
+        </table>
+        <p>*The additional charge of ₹500 is for each additional clinic location.This will be charged monthly.</p>
+    </section>
+    <section id="demo-video-section">
+        <h2>Demo Video</h2>
+       
+            <img src="comingsoon.jpg" alt="">
+           
+        
+    </section>
+
+    <script>
+        function submitDemoRequest() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            // You can add your custom logic here, e.g., send a request to your server.
+            document.getElementById('demo-request-message').textContent = `Thank you, ${name}! Your demo request has been submitted.`;
+        }
+    </script>
+    <footer class="text-footer">
+        <p>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </p>
+    </footer>
+</body>
+</html>

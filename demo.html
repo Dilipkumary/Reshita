@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=0.1">
+    <title>Web page</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        .form{
+            width:250px;
+            height: 380px;
+            background: linear-gradient(to top,rgba(0, 0, 0, 0.8)50%,rgba(0, 0, 0, 0.8)50%);
+            position:absolute;
+            top:-20px;
+            right: 50px;
+            text-align: center;
+            border-radius:10px;
+            padding: 25px;
+            margin-top: 160px;
+        }
+
+        .form h2{
+            width:240px;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ff7200;
+            font-size: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin:2px;
+            padding: 8px;
+            position:sticky;
+            top:0;
+            cursor: pointer;
+        }
+
+        .form input{
+            width:240px;
+            height: 25px;
+            background: transparent;
+            border-bottom: 1px solid #ff7200;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            font-family: sans-serif;
+        }
+
+        .form input:focus{
+            outline: none;
+        }
+
+        ::placeholder{
+            color: #fff;
+            font-family: Arial;
+        }
+
+        .btnn{
+            width:240px;
+            height: 40px;
+            text-align: center;
+            align-items: center;
+            background-color: #ff7200;
+            border: none;
+            margin-top: 30px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        .btnn:hover{
+            background: #fff;
+            color: #ff7200;
+        }
+        .btnn a{
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .form .link{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .form .link a{
+            text-decoration: none;
+            color: #ff7200;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">              
+            <div class="icon">
+                <img src="website.jpg">       
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Product.html">Product</a></li>
+                    <li><a herf="Review.html">Review</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    <div class="form">
+        <h2>Demo Vidio</h2>
+        <input type="name" name="name" placeholder="Enter the Name">
+        <input type="mobile" name="mobile" placeholder="Enter the Mobile">
+        <input type="email" name="email" placeholder="Enter the Email">
+        <input type="State" name="State" placeholder="Enter the State">
+        <input type="City" name="City" placeholder="Enter the City">
+        <button class="btnn"><a href="#">Demo visit</a></button>                        
+    </div>
+</body>

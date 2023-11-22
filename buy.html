@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now Sales</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+    padding: 20px;
+}
+
+.sales-options, .user-information {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.sales-options h2, .user-information h2 {
+    color: #333;
+}
+
+.sales-options label, .user-information input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-information input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-information button {
+    background-color: #0074cc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.user-information button:hover {
+    background-color: #0053a1;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sales-options, .user-information {
+        margin: 10px;
+        padding: 10px;
+    }
+    .user-information button {
+        padding: 8px 16px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Buy Now</h1>
+    </header>
+    <div class="user-information"> 
+        <h2>Buyer Information</h2>
+        <form id="Buyer-info-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="specialization">Specialization:</label>
+            <input type="text" id="specialization" name="specialization" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Buy Now Sales. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
